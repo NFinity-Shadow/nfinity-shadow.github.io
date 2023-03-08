@@ -1,57 +1,39 @@
 [
     {
-        "titre": "Projet 1",
-        "description": "Ceci est une description pour le projet 1",
-        "image": "images/projet1.jpg",
-        "lien": "https://www.example.com/projet1"
+        "titre": "Flappy Bird",
+        "description": "Projet de clonage du célèbre jeu Flappy Bird avec une gestion de contrôle de collision, utilisation de la physique (gravité, vitesse et vélocité).",
+        "image": "images/flappy-bird.png",
+        "lien": "https://www.github.com/NFinity-Shadow/FlappyBird"
     },
     {
-        "titre": "Projet 2",
-        "description": "Ceci est une description pour le projet 2",
-        "image": "images/projet2.jpg",
-        "lien": "https://www.example.com/projet2"
+        "titre": "Météo App",
+        "description": "Application de météo permettant de connaître la météo d'une ville en la recherchant à l'aide d'une API.",
+        "image": "images/application-meteo.png",
+        "lien": "https://www.github.com/NFinity-Shadow/MeteoApp"
     },
     {
-        "titre": "Projet 3",
-        "description": "Ceci est une description pour le projet 3",
-        "image": "images/projet3.jpg",
-        "lien": "https://www.example.com/projet3"
+        "titre": "Movie App",
+        "description": "Application de recherche de films permettant de connaître les informations d'un film en le recherchant à l'aide d'une API.",
+        "image": "images/cinema.png",
+        "lien": "https://www.github.com/NFinity-Shadow/MovieApp"
     },
     {
-        "titre": "Projet 4",
-        "description": "Ceci est une description pour le projet 4",
-        "image": "images/projet4.jpg",
-        "lien": "https://www.example.com/projet4"
+        "titre": "Posturomètre",
+        "description": "Projet de fin d'étude de BTS Systèmes Numériques permettant de mesurer la posture d'une personne à l'aide d'un capteur d'inclinaison. De plus, il permet de mesurer les charges portées par l'utilisateur à l'aide de capteurs de pression dans les chaussures de l'ouvrier. Ainsi, ce projet à pour but de renseigner sur les postes ayant le plus d'impact sur la santé de l'ouvrier grâce à une IHM renvoyant des statistiques.",
+        "image": "images/posturometre.png",
+        "lien": "https://www.github.com/NFinity-Shadow/Posturometre"
     },
     {
-        "titre": "Projet 5",
-        "description": "Ceci est une description pour le projet 5",
-        "image": "images/projet5.jpg",
-        "lien": "https://www.example.com/projet5"
+        "titre": "LeagueOfBuilds",
+        "description": "Application sous iOS pour iPhone, dans le but d'apprendre les éléments du jeu League of Legends. Cette application permet de connaître les builds des champions du jeu League of Legends. Tout ceci est géré à l'aide d'une base de données Firebase.",
+        "image": "images/leagueoflegends.png",
+        "lien": "https://www.github.com/NFinity-Shadow/LeagueOfBuilds"
     },
     {
-        "titre": "Projet 6",
-        "description": "Ceci est une description pour le projet 6",
-        "image": "images/projet6.jpg",
-        "lien": "https://www.example.com/projet6"
-    },
-    {
-        "titre": "Projet 7",
-        "description": "Ceci est une description pour le projet 7",
-        "image": "images/projet7.jpg",
-        "lien": "https://www.example.com/projet7"
-    }, 
-    {   
-        "titre": "Projet 8",
-        "description": "Ceci est une description pour le projet 8",
-        "image": "images/projet8.jpg",
-        "lien": "https://www.example.com/projet8"
-    }, 
-    {   
-        "titre": "Projet 9",
-        "description": "Ceci est une description pour le projet 9",
-        "image": "images/projet9.jpg",
-        "lien": "https://www.example.com/projet9"
+        "titre": "EscapeBack",
+        "description": "Projet de fin d'étude de Bac STI2D SIN permettant à des personnes dans un immeuble prisonnières d'un incendie de pouvoir descendre en rappel avec un sac à dos de la façon la plus sécurisé possible.",
+        "image": "images/escapeback.png",
+        "lien": "https://www.github.com/NFinity-Shadow/EscapeBack"
     }
 ]
   
