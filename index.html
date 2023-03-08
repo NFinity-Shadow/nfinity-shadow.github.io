@@ -1,137 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon portfolio</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-    <body>
+	<head>
+		<meta charset="utf-8">
+		<title>Portfolio Jeffrey Badin</title>
+		<link rel="stylesheet" href="styles.css">
+		<script type="module" src="projets.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="projets.html">Projets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+		</header>
 
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Projets</a></li>
-                    <li><a href="#">À propos</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>        
-            </nav>
-        </header>
-        <div class="content">
-            <main>
-                <h1>Mon portfolio</h1>
-                <section class="grid">
-                    <div class="project">
-                        <img src="projet1.png" alt="Projet 1">
-                        <h2>Projet 1</h2>
-                        <p>Description du projet 1.</p>
-                    </div>
-                    <div class="project">
-                        <img src="projet2.png" alt="Projet 2">
-                        <h2>Projet 2</h2>
-                        <p>Description du projet 2.</p>
-                    </div>
-                    <div class="project">
-                        <img src="projet3.png" alt="Projet 3">
-                        <h2>Projet 3</h2>
-                        <p>Description du projet 3.</p>
-                    </div>
-                    <div class="project">
-                        <img src="projet4.png" alt="Projet 4">
-                        <h2>Projet 4</h2>
-                        <p>Description du projet 4.</p>
-                    </div>
-                    <div class="project">
-                        <img src="projet5.png" alt="Projet 5">
-                        <h2>Projet 5</h2>
-                        <p>Description du projet 5.</p>
-                    </div>
-                    <div class="project">
-                        <img src="projet6.png" alt="Projet 6">
-                        <h2>Projet 6</h2>
-                        <p>Description du projet 6.</p>
-                    </div>
-                    <div class="project">
-                        <img src="projet7.png" alt="Projet 7">
-                        <h2>Projet 7</h2>
-                        <p>Description du projet 7.</p>
-                    </div>
-                    <div class="project">
-                        <img src="projet8.png" alt="Projet 8">
-                        <h2>Projet 8</h2>
-                        <p>Description du projet 8.</p>
-                    </div>
-                    <div class="project">
-                        <img src="projet9.png" alt="Projet 9">
-                        <h2>Projet 9</h2>
-                        <p>Description du projet 9.</p>
-                    </div>
-                    <div class="project">
-                        <img src="projet10.png" alt="Projet 10">
-                        <h2>Projet 10</h2>
-                        <p>Description du projet 10.</p>
-                    </div>
-                    <div class="project">
-                        <img src="projet11.png" alt="Projet 11">
-                        <h2>Projet 11</h2>
-                        <p>Description du projet 11.</p>
-                    </div>
-                    <div class="project">
-                        <img src="projet12.png" alt="Projet 12">
-                        <h2>Projet 12</h2>
-                        <p>Description du projet 12.</p>
-                    </div>
-                    <!-- Répéter les 12 blocs de projet pour remplir la grille -->
-                </section>
-            </main>
-        </div>
+		<main>
+			<section class="fiches">
+			
+			</section>
+		</main>
 
-        <div class="footer">
-            <div class="social-icons">
-                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-            </div>          
-        </div>
-
-        <footer>
-            <p>&copy; 2023 Mon portfolio. Tous droits réservés.</p>
-        </footer>
-
-        <script>
-            // Ajoute une animation de survol pour les liens de la navigation
-            const navLinks = document.querySelectorAll('nav a');
-            navLinks.forEach(link => {
-            link.addEventListener('mouseover', () => {
-                link.style.backgroundColor = '#333';
-                link.style.color = '#fff';
-                link.style.transition = 'all 0.3s ease-in-out';
-            });
-            link.addEventListener('mouseout', () => {
-                link.style.backgroundColor = 'transparent';
-                link.style.color = '#333';
-                link.style.transition = 'all 0.3s ease-in-out';
-            });
-            });
-
-            // Ajoute une animation de survol pour les projets
-            const projects = document.querySelectorAll('.project');
-            projects.forEach(project => {
-            project.addEventListener('mouseover', () => {
-                project.style.transform = 'translateY(-5px)';
-                project.style.boxShadow = '0 8px 16px rgba(0,0,0,0.2)';
-                project.style.transition = 'all 0.3s ease-in-out';
-            });
-            project.addEventListener('mouseout', () => {
-                project.style.transform = 'translateY(0)';
-                project.style.boxShadow = '0 2px 4px rgba(0,0,0,0.1)';
-                project.style.transition = 'all 0.3s ease-in-out';
-            });
-            });
-        </script>
-
-    </body>
+    <footer>
+      <p>© 2021 - Jeffrey Badin</p>
+    </footer>
+	</body>
 </html>
