@@ -50,8 +50,11 @@ nav a:hover {
 main {
 	display: flex;
 	flex-direction: row;
-	background: linear-gradient(to bottom, #4682B4, #7D3C98);
+	justify-content: center;
+	/*background: linear-gradient(to bottom, #4682B4, #7D3C98);*/
+	background: linear-gradient(to bottom, #fff, #333);
 	max-width: auto;
+	max-height: auto;
 	margin: 0 auto;
 	padding: 40px;
 }
@@ -70,7 +73,9 @@ footer {
 
 .bande{
 	background-color: #333;
-	height: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 
 }
 
@@ -80,6 +85,7 @@ footer {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 4px;
+	transition: 0.5s;
 }
 .projets article {
 	background-color: #fff;
@@ -102,3 +108,52 @@ footer {
 	text-align: center;
 }
 
+
+.fa:hover {
+	opacity: 0.7;
+	transition: 0.5s;
+}
+
+.fa-linkedin, .fa-github {
+	color: white;
+	padding: 10px;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 40px;
+	width: 40px;
+	text-decoration: none;
+	margin: 10px 80px;
+}
+
+.formulaire-container {
+	border-radius: 15px;
+	box-shadow: 0px 2px 5px #000;
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items: center;
+	height: auto;
+	width: auto;
+}
+
+.formulaire {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+}
+
+input {
+	margin: 10px;
+	border-radius: 5px;
+	border: 1px solid #333;
+	box-shadow: 0px 2px 5px #000;
+}
+
+textarea {
+	height: 100px;
+	width: 300px;
+	margin: 10px;
+	border-radius: 5px;
+	border: 1px solid #333;
+	box-shadow: 0px 2px 5px #000;
+}
