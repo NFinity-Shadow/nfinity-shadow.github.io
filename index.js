@@ -22,7 +22,11 @@ function genererPageAccueil(){
 
         const descriptionPresentation = document.createElement("p");
         descriptionPresentation.classList.add("presentation-description");
-        descriptionPresentation.innerText = "Je suis un ...";
+        descriptionPresentation.innerText = "Je suis un jeune développeur C/C++ et web fullstack."+
+        " Je suis passionné par le développement web et logiciel."+
+        " Je suis actuellement en recherche d'un contrat court (environ 6 mois) et d'une alternance pour la rentrée en Septembre 2023 pour une formation d'ingénieur en alternance."+
+        "\n\nAinsi, je cherche à rejoindre une entreprise pour développer et renforcer mes compétences de programmation."+
+        " Ayant étudié différents domaines, je suis polyvalent avec une grande capacité d'adaptation et excellent en équipe.";
 
         const conteneur_telechargerCV = document.createElement("div");
         conteneur_telechargerCV.classList.add("dl-CV");
@@ -150,13 +154,50 @@ function genererPageContact(){
         formulaire.appendChild(bouton);
 }
 
+function genererPageInfos(){
+        const infos = document.querySelector(".informations");
+        const conteneurInfosLangages = document.createElement("div");
+        conteneurInfosLangages.classList.add("conteneurInfosLangages");
+
+        const titreInfos = document.createElement("h1");
+        titreInfos.innerText = "Informations";
+        const infosVersion = document.createElement("p");
+        infosVersion.classList.add("version");
+        infosVersion.innerText = "Version 1.0";
+        const infosTexte = document.createElement("p");
+        infosTexte.classList.add("texteInfos");
+        infosTexte.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor "+
+        "incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco "+
+        "laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit "+
+        "esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui "+
+        "officia deserunt mollit anim id est laborum.";
+
+        infos.appendChild(titreInfos);
+        infos.appendChild(infosVersion);
+        infos.appendChild(infosTexte);
+        infos.appendChild(conteneurInfosLangages);
+
+        const infosLangages = document.querySelector(".conteneurInfosLangages");
+        const langagesUtilises = document.createElement("p");
+        langagesUtilises.classList.add("langagesUtilises");
+        langagesUtilises.innerText = "Réalisé en ";
+        const logosLangagesUtilises = document.createElement("img");
+        logosLangagesUtilises.classList.add("logosLangagesUtilises");
+        logosLangagesUtilises.src = "images/logosLangagesUtilises.png";
+
+        infosLangages.appendChild(langagesUtilises);
+        infosLangages.appendChild(logosLangagesUtilises);
+}
+
 function effacerPages(){
         const presentation = document.querySelector(".presentation");
         const projets = document.querySelector(".projets");
         const contact = document.querySelector(".formulaire-container"); 
+        const infos = document.querySelector(".informations");
         presentation.innerHTML = "";
         projets.innerHTML = "";
         contact.innerHTML = "";
+        infos.innerHTML = "";
 }
 
 const boutonNavContact = document.querySelector(".navigation-contact");
@@ -167,13 +208,19 @@ boutonNavContact.addEventListener('click', () => {
 });
 
 const boutonNavProjet = document.querySelector(".navigation-projet");
-        boutonNavProjet.addEventListener('click', () => {
+boutonNavProjet.addEventListener('click', () => {
         effacerPages();
         genererProjets(projets);
 });
 
 const boutonNavAccueil = document.querySelector(".navigation-accueil");
-        boutonNavAccueil.addEventListener('click', () => {
+boutonNavAccueil.addEventListener('click', () => {
         effacerPages();
         genererPageAccueil();
+});
+
+const boutonNavInfos = document.querySelector(".navigation-infos");
+boutonNavInfos.addEventListener('click', () => {
+        effacerPages();
+        genererPageInfos();
 });

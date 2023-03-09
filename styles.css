@@ -94,6 +94,13 @@ h1 {
 	margin: 0;
 }
 
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 .presentation {
 	display: flex;
 	flex-direction: column;
@@ -106,6 +113,13 @@ h1 {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+}
+
+.presentation-description{
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 20px;
+	width: 900px;
+	margin: 30px;
 }
 
 .circular{
@@ -177,7 +191,7 @@ h1 {
 	font-family: 'Helvetica Neue', sans-serif;
 	font-size: 40px;
 	text-decoration: none;
-	margin: 100px 80px;
+	margin: 40px 80px;
 }
 
 .formulaire-container {
@@ -191,9 +205,37 @@ h1 {
 	width: auto;
 }
 
-form {
+.informations {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+.version {
+	font-size: 12px;
+}
+
+.texteInfos {
+	font-family: 'Helvetica Neue', sans-serif;
+	font-style: italic;
+	font-size: 18px;
+}
+
+.langagesUtilises {
+	margin-top: 60px;
+}
+
+.conteneurInfosLangages {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.logosLangagesUtilises {
+	width: 120px;
+	height: 30px;
+	margin: 10px;
+	padding-top: 40px;
 }
