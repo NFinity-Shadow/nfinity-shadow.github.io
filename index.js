@@ -14,6 +14,44 @@ navLinks.forEach(link => {
 	});
 });
 
+function genererPageAccueil(){
+        const presentation = document.querySelector(".presentation");
+
+        const presentationInfo = document.createElement("div");
+        presentationInfo.classList.add("presentation-info");
+
+        const descriptionPresentation = document.createElement("p");
+        descriptionPresentation.classList.add("presentation-description");
+        descriptionPresentation.innerText = "Je suis un ...";
+
+        const conteneur_telechargerCV = document.createElement("div");
+        conteneur_telechargerCV.classList.add("dl-CV");
+
+        presentation.appendChild(presentationInfo);
+        presentation.appendChild(descriptionPresentation);
+        presentation.appendChild(conteneur_telechargerCV);
+
+        const titrePresentation = document.createElement("h1");
+        titrePresentation.innerText = "Jeffrey Badin";
+
+        const imageCV = document.createElement("img");
+        imageCV.classList.add("circular");
+        imageCV.src = "images/jeffrey.jpg";
+
+        presentationInfo.appendChild(imageCV);
+        presentationInfo.appendChild(titrePresentation);
+
+        const telechargerCV = document.createElement("a");
+        telechargerCV.classList.add('fa', 'fa-download');
+        telechargerCV.setAttribute("href", "downloads/CV.pdf");
+        telechargerCV.setAttribute("download", "CV.pdf");
+        telechargerCV.innerText = "Télécharger mon CV";
+        
+        conteneur_telechargerCV.appendChild(telechargerCV);
+}
+
+genererPageAccueil();
+
 // Récupération les projets depuis le fichier JSON
 const reponse = await fetch('projets.json');
 const projets = await reponse.json();
@@ -128,9 +166,14 @@ boutonNavContact.addEventListener('click', () => {
         genererPageContact();
 });
 
-//genererProjets(projets);
 const boutonNavProjet = document.querySelector(".navigation-projet");
         boutonNavProjet.addEventListener('click', () => {
         effacerPages();
         genererProjets(projets);
+});
+
+const boutonNavAccueil = document.querySelector(".navigation-accueil");
+        boutonNavAccueil.addEventListener('click', () => {
+        effacerPages();
+        genererPageAccueil();
 });
