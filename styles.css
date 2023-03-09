@@ -46,15 +46,15 @@ nav a:hover {
 	background-color: #333;
 	color: #fff;
 }
-  
+
 main {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	/*background: linear-gradient(to bottom, #4682B4, #7D3C98);*/
 	background: linear-gradient(to bottom, #fff, #333);
 	max-width: auto;
 	max-height: auto;
+	min-height: 650px;
 	margin: 0 auto;
 	padding: 40px;
 }
@@ -64,12 +64,49 @@ footer {
 	padding: 20px;
 	text-align: center;
 }
-  
+
 @media screen and (max-width: 768px) {
 	main {
 		padding: 20px;
 	}
-  }
+}
+
+input {
+	margin: 10px;
+	border-radius: 5px;
+	border: 1px solid #333;
+	box-shadow: 0px 2px 5px #000;
+}
+
+textarea {
+	height: 100px;
+	width: 300px;
+	margin: 10px;
+	border-radius: 5px;
+	border: 1px solid #333;
+	box-shadow: 0px 2px 5px #000;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	margin: 0;
+}
+
+.presentation {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.presentation-info {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
 
 .bande{
 	background-color: #333;
@@ -131,29 +168,13 @@ footer {
 	flex-direction: column;
 	justify-content:center;
 	align-items: center;
-	height: auto;
+	height: 400px;
 	width: auto;
 }
 
-.formulaire {
+form {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: left;
-}
-
-input {
-	margin: 10px;
-	border-radius: 5px;
-	border: 1px solid #333;
-	box-shadow: 0px 2px 5px #000;
-}
-
-textarea {
-	height: 100px;
-	width: 300px;
-	margin: 10px;
-	border-radius: 5px;
-	border: 1px solid #333;
-	box-shadow: 0px 2px 5px #000;
+	align-items: center;
 }
