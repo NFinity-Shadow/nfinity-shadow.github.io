@@ -149,8 +149,11 @@ form {
 	background-color: #fff;
 	border: 1px solid black;
 	border-radius: 10px;
+	box-shadow: 0px 2px 5px #000;
+	margin: 20px;
 	padding: 4px;
 }
+
 .projets article img {
 	display: block;
 	margin-left: auto;
@@ -159,13 +162,14 @@ form {
 	height: auto;
 }
 .projets article p {
+	margin-left: 20px;
+	margin-right: 20px;
 	margin-top: 4px;
 	margin-bottom: 4px;
 }
 .projets article h2 {
 	text-align: center;
 }
-
 
 .fa:hover {
 	opacity: 0.7;

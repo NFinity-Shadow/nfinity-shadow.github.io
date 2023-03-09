@@ -84,23 +84,25 @@ function genererProjets(projets){
         pieceElement.appendChild(descriptionElement);
 
         pieceElement.addEventListener('mouseover', () => {
-            pieceElement.style.transform = 'translateY(-5px)';
-            pieceElement.style.backgroundColor = '#333';
-	    	pieceElement.style.color = '#fff';
-            pieceElement.style.boxShadow = '0 8px 16px rgba(0,0,0,0.2)';
-            pieceElement.style.transition = 'all 0.3s ease-in-out';
+                pieceElement.style.transform = 'translateY(-5px)';
+                pieceElement.style.backgroundColor = '#333';
+	        pieceElement.style.color = '#fff';
+                pieceElement.style.boxShadow = '0 8px 16px rgba(0,0,0,0.2)';
+                pieceElement.style.transform = 'rotate(2deg)';
+                pieceElement.style.transition = 'all 0.3s ease-in-out';
         });
         
         pieceElement.addEventListener('mouseout', () => {
-            pieceElement.style.transform = 'translateY(0)';
-            pieceElement.style.backgroundColor = '#fff';
-		    pieceElement.style.color = '#333';
-            pieceElement.style.boxShadow = '0 2px 4px rgba(0,0,0,0.1)';
-            pieceElement.style.transition = 'all 0.3s ease-in-out';
+                pieceElement.style.transform = 'translateY(0)';
+                pieceElement.style.backgroundColor = '#fff';
+                pieceElement.style.color = '#333';
+                pieceElement.style.boxShadow = '0px 2px 5px #000';
+                pieceElement.style.transform = 'rotate(0deg)';
+                pieceElement.style.transition = 'all 0.3s ease-in-out';
         });
 
         pieceElement.addEventListener('click', () => {
-            window.open(article.lien);
+                window.open(article.lien);
         });
     }
 }
@@ -224,3 +226,4 @@ boutonNavInfos.addEventListener('click', () => {
         effacerPages();
         genererPageInfos();
 });
+
