@@ -81,7 +81,7 @@ function genererProjets(projets){
         sectionFiches.appendChild(pieceElement);
         pieceElement.appendChild(imageElement);
         pieceElement.appendChild(nomElement);
-        pieceElement.appendChild(descriptionElement);
+        //pieceElement.appendChild(descriptionElement);
 
         pieceElement.addEventListener('mouseover', () => {
                 pieceElement.style.transform = 'translateY(-5px)';

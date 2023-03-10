@@ -9,13 +9,13 @@
         "titre": "Météo App",
         "description": "Application de météo permettant de connaître la météo d'une ville en la recherchant à l'aide d'une API.",
         "image": "images/application-meteo.png",
-        "lien": "https://www.github.com/NFinity-Shadow/MeteoApp"
+        "lien": "https://www.github.com/NFinity-Shadow/Meteo_App"
     },
     {
         "titre": "Movie App",
         "description": "Application de recherche de films permettant de connaître les informations d'un film en le recherchant à l'aide d'une API.",
         "image": "images/cinema.png",
-        "lien": "https://www.github.com/NFinity-Shadow/MovieApp"
+        "lien": "https://www.github.com/NFinity-Shadow/Movie_App"
     },
     {
         "titre": "Posturomètre",
