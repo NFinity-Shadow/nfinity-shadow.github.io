@@ -243,3 +243,15 @@ form {
 	margin: 10px;
 	padding-top: 40px;
 }
+
+#github-projet {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 10px;
+	height: 10px;
+	background-color: #333;
+	border: #333;
+	border-radius: 15px;
+}

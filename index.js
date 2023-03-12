@@ -78,10 +78,14 @@ function genererProjets(projets){
         const descriptionElement = document.createElement("p");
         descriptionElement.innerText = article.description ?? "Pas de description pour le moment.";
         
+        const lienElement = document.createElement("a");
+        lienElement.innerHTML = `<a href="${article.lien}" id="github-projet" class="fa fa-github"></a>`;
+
         sectionFiches.appendChild(pieceElement);
         pieceElement.appendChild(imageElement);
         pieceElement.appendChild(nomElement);
         //pieceElement.appendChild(descriptionElement);
+        let descriptionIsOpened = false;
 
         pieceElement.addEventListener('mouseover', () => {
                 pieceElement.style.transform = 'translateY(-5px)';
@@ -102,7 +106,22 @@ function genererProjets(projets){
         });
 
         pieceElement.addEventListener('click', () => {
-                window.open(article.lien);
+                //window.open(article.lien);
+                if(!descriptionIsOpened){
+                        pieceElement.style.width = '300px';
+                        pieceElement.style.height = 'auto';
+                        pieceElement.style.transition = '0.7s';
+                        pieceElement.appendChild(descriptionElement);
+                        pieceElement.appendChild(lienElement);
+                        descriptionIsOpened = true;
+                }else{
+                        pieceElement.style.width = '200px';
+                        pieceElement.style.height = 'auto';
+                        pieceElement.style.transition = '0.7s';
+                        pieceElement.removeChild(descriptionElement);
+                        pieceElement.removeChild(lienElement);
+                        descriptionIsOpened = false;
+                }
         });
     }
 }
